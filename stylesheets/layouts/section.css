@@ -1,0 +1,28 @@
+.section-achievements, .section-team, .section-work, .section-skills, .section-features, .section-touch{
+    padding-top: 79px;
+}
+
+.section-achievements, .section-team, .section-skills, .section-touch {
+    padding-bottom: 100px;
+}
+
+.section-work, .section-features {
+    background: #3a454d;
+    padding-bottom: 60px;
+}
+
+
+@media (max-width: 790px) {
+    .section-achievements, .section-team, .section-work, .section-skills, .section-features, .section-touch {
+        padding-top: 40px;
+    }
+
+    .section-team, .section-skills, .section-touch, .section-features {
+        padding-bottom: 40px;
+    }
+
+    .section-achievements {
+        padding-bottom: 0;
+    }
+}
+

@@ -1,0 +1,26 @@
+.container {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .container {
+  padding-left: 0;
+  padding-right: 0
+}
+
+.container-expand {
+  max-width: none
+}
+
+.container-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+}

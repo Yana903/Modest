@@ -1,0 +1,413 @@
+.navbar-nav li {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.navbar-nav li a{
+    color: #a4aead;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 8px 10px;
+}
+
+.navbar-nav li:last-child {
+    margin-right: 0;
+}
+
+.navbar-nav li a:focus, .navbar-nav li a:active{
+    color: #23b7a4;
+    border: 2px solid #23b7a4;
+    border-radius: 3px;
+}
+
+.navbar-nav li a:hover{
+    color: #a4aead;
+    border: 2px solid #5b6168;
+    border-radius: 3px;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+}
+
+.slider-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url(../../images/bg.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slider-foreground {
+    position: relative;
+    padding-top: 225px;
+    padding-bottom: 225px;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 30px;
+    right: 170px;
+}
+
+.slider-dot {
+    display: inline-block;
+}
+
+.slider-dots .slider-dot {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin: 2px 2px;
+    background: transparent;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.slider-dots .is-active {
+    background: #fff;
+}
+
+.inverse {
+    color: var(--global-inverse-color);
+}
+
+.hero-inform {
+    max-width: 653px;
+}
+
+.hero-inform .description {
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+
+.button-group a:first-of-type{
+    margin-right: 11px;
+
+}
+
+.heading {
+    margin-bottom: 79px;
+    border-left: 10px solid #e1e6ea;
+    padding-left: 14px;
+}
+
+.layout-modest .layout-item> p {
+  margin-bottom: 40px;
+}
+
+.layout-modest .layout-item .achieved {
+    list-style-type: none;
+    /*display: flex;*/
+    counter-reset:  item;
+    /*padding-left: 0;*/
+}
+
+.layout-modest .layout-item .achieved li{
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.achieved {
+    margin-top: 15px ;
+}
+
+.achieved>li::before {
+    content: '0'counter(item);
+    padding: 10px;
+    background: #23b7a4;
+    color: #fff;
+    counter-increment: item;
+}
+
+.layout-modest .layout-item .achieved li:last-child{
+    margin-bottom: 0;
+}
+
+.achieved-description {
+    position: absolute;
+    top: -13px;
+    left: 60px;
+
+}
+
+.icons-social {
+    max-width: 304px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-person img, .image-travel img, .image-features img{
+    width: 100%;
+}
+
+.image-person, .image-travel{
+    position: relative;
+}
+
+.card-person:hover .fluid1 {
+    display: flex;
+}
+
+.card-person:hover .person-data {
+    background: #3a454d;
+    color: #fff;
+}
+
+.card-person:hover .person-name {
+    color: #fff;
+}
+
+.secondary-social {
+    background: #3a454d;
+}
+
+.person-data {
+    padding: 20px;
+    background: #e1e6ea;
+}
+
+.fluid1 {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 225, 225, 0.5 );
+}
+
+.fluid2 {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 38, 38, 0.5 );
+}
+
+.plus {
+    font-size: 30px;
+    color: #fff;
+}
+
+.partnership {
+    margin-top: 15%;
+    width: 100%;
+    padding: 20px;
+    background: #292f36;
+}
+
+.card-travel:hover .fluid2 {
+    display: flex;
+}
+
+.button-travel {
+    margin-left: 43%;
+    margin-top: 60px;
+}
+
+.card-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.card-skills p {
+    text-align: center;
+}
+
+.feature-description {
+    margin-top: 54px;
+}
+
+.feature-description p {
+    margin-top: 30px;
+}
+
+.contact-inform > *{
+    padding-bottom: 39px;
+}
+
+.contact-inform p:last-of-type {
+    padding-bottom: 0;
+}
+
+.contact-inform:first-child {
+    padding-right: 53px;
+}
+
+.inform-form {
+    padding: 30px;
+}
+
+.inform-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-data {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.form-data p:first-of-type {
+    margin-right: 15px;
+    flex-grow: 1;
+}
+
+.button-box {
+    margin-top: 30px;
+}
+
+.inform-form textarea {
+    resize: none;
+}
+
+.inform-form {
+    background: #fff;
+}
+
+.copyright {
+    padding-top: 10px;
+}
+
+@media (max-width: 790px) {
+
+    .layout-header {
+        display: flex !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .navbar-nav {
+        display: none;
+    }
+
+    .grid, .layout {
+        display: block;
+    }
+
+    .special {
+        margin-top: 0;
+    }
+
+    .form-data {
+        display: block;
+    }
+
+    .layout-contact-inform .layout-item, .layout-modest .layout-item {
+        width: 100%;
+    }
+
+    .layout-modest .layout-item {
+        text-align: center;
+    }
+
+    .form-data p:first-of-type {
+        margin-right: 0;
+    }
+
+    .hero-inform, .contact-inform {
+        text-align: center;
+    }
+
+    .contact-inform:first-child {
+        padding-right: 0;
+    }
+
+    .button-group {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .button-travel {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .slider-foreground {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .slider-dots {
+        right: 135px;
+    }
+
+    .heading {
+        margin-bottom: 30px;
+    }
+
+    .icons-social {
+        padding-bottom: 40px;
+    }
+
+    .grid-work .grid-item, .grid-features .grid-item{
+        padding-bottom: 30px;
+    }
+
+    .feature-description, .feature-description p {
+        margin-top: 20px;
+    }
+
+    .button-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright {
+        font-size: 11px;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .footer-icons-social {
+        padding-bottom: 10px;
+    }
+
+    .achieved-description {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .layout-modest .layout-item .achieved li {
+        margin-bottom: 20px;
+    }
+
+    .achieved {
+        padding-left: 0;
+    }
+
+    .card-person {
+        padding-bottom: 20px;
+    }
+}

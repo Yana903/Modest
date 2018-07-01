@@ -1,0 +1,63 @@
+Components: 
+
+- header
+- navbar
+- logo
+- hero
+- section * 10
+- footer
+- layout * 6
+- grid * 4
+- heading
+- form
+- social
+- button
+- card * 4
+- slider
+
+Modules:
+
+- hero
+	- section-hero
+	- layout-hero
+	- title-hero
+	- description-hero
+	- button
+	
+- achivements
+	- section-achievements
+	- heading
+	- description-achivements
+	- link-achivements
+	- social
+	
+- team
+	- section-team
+	- heading
+	- grid-team
+	- card-team
+	
+- work
+	- section-work
+	- heading
+	- grid-work
+	- button
+	
+-skills
+	- section-skills
+	- heading
+	- grid-skills
+	- card-skills
+	
+- features
+	- section-features
+	- heading
+	- grid-features
+	- card-features
+	
+- contacts
+	- section-contacts
+	- layout-contact
+	- heading
+	- form-contact
+	

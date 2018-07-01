@@ -1,0 +1,82 @@
+:root {
+  --button-color: #fff;
+  --button-background: #23b7a4;
+  --button-font-family: var(--base-heading-font-family);
+  --button-font-size: 14px;
+  --button-font-weight: normal;
+  --button-padding: 0 26px;
+  --button-height: var(--global-control-height);
+
+  --button-color-hover: #fff;
+  --button-background-hover: #1c9081;
+
+  --button-color-focus: #fff;
+  --button-background-focus: #1c9081;
+
+  --button-color-active: #fff;
+  --button-background-active: #1c9081;
+}
+
+
+button,
+input[type="button"],
+input[type="submit"],
+.button {
+  margin: 0;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  user-select: none;
+  border-radius: 3px;
+  overflow: visible;
+  font: inherit;
+  text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--button-padding);
+  font-family: var(--button-font-family);
+  font-size: var(--button-font-size);
+  min-height: var(--button-height);
+  text-decoration: none;
+  background: var(--button-background);
+  color: var(--button-color);
+}
+
+.button:not(:disabled) {
+  cursor: pointer
+}
+
+.button::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+.button:hover {
+  text-decoration: none;
+  background: var(--button-background-hover);
+  color: var(--button-color-hover);
+}
+
+.button:focus {
+  outline: none;
+  background: var(--button-background-focus);
+  color: var(--button-color-focus);
+}
+
+.button:active,
+.button.is-active {
+  background: var(--button-background-active);
+  color: var(--button-color-active);
+}
+
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+.button-inverse {
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
