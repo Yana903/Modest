@@ -25,6 +25,16 @@ svg[class*=" icon-"] {
   fill: currentColor;
 }
 
+svg[class^="icon-"]:hover,
+svg[class*=" icon-"]:hover {
+  fill: #34e4cd;
+}
+
+.icon-skills:hover {
+  color: #34e4cd;
+}
+
+
 .icon-menu {
   fill: #fff !important;
   display: none !important;
