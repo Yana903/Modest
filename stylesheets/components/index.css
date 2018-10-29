@@ -14,6 +14,7 @@
     text-decoration: none;
     border: 2px solid transparent;
     padding: 8px 10px;
+    touch-action: manipulation;
 }
 
 .navbar-nav li a.is-active{
@@ -345,6 +346,7 @@ ul.navbar-nav li.icon {
 
     .navbar-nav li a {
         border: none;
+        touch-action: manipulation;
     }
 
     ul.navbar-nav.responsive li a.is-active,
