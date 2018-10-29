@@ -69,10 +69,10 @@
                 </a>
             </div>
             <div class="layout-item">
-                <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg>
-                <ul class="navbar-nav">
+                <a class="button-burger" href="javascript:void(0);" onclick="Burger()"> <svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></a>
+                <ul class="navbar-nav" id="js_nav">
                     <li>
-                        <a href="#">HOME</a>
+                        <a href="#" class="is-active">HOME</a>
                     </li>
                     <li>
                         <a href="#">ABOUT</a>
@@ -102,19 +102,21 @@
         <div class="slider-background"></div>
         <div class="slider-foreground">
             <div class="container container-flex-col">
-                <div class="hero-inform">
-                    <h1 class="inverse">WELCOME TO OUR MARKETPLACE</h1>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed nis metus, tristique ndolor non, ornare saggitis dolor. Nulla vestibulu lacus</p>
-                </div>
-                <div class="button-group">
-                    <a href="#" class="button">VIEW MORE</a>
-                    <a href="#" class="button button-inverse">VIDEOTOUR</a>
-                </div>
-                <div class="slider-dots">
-                    <div class="slider-dot"></div>
-                    <div class="slider-dot is-active"></div>
-                    <div class="slider-dot"></div>
+                <div class="hero">
+                    <div class="hero-inform inverse">
+                        <h2>WELCOME TO OUR MARKETPLACE</h2>
+                        <p class="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed nis metus, tristique ndolor non, ornare saggitis dolor. Nulla vestibulu lacus</p>
+                    </div>
+                    <div class="button-group">
+                        <a href="#" class="button">VIEW MORE</a>
+                        <a href="#" class="button">VIDEOTOUR</a>
+                    </div>
+                    <div class="slider-dots">
+                        <a class="slider-dot"></a>
+                        <a class="slider-dot is-active"></a>
+                        <a class="slider-dot"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -123,7 +125,7 @@
 <section class="section-achievements">
     <div class="container">
         <div class="heading">
-            <h1>WE ARE MODEST</h1>
+            <h2>WE ARE MODEST</h2>
         </div>
         <div class="layout layout-modest">
             <div class="layout-item">
@@ -193,14 +195,14 @@
 <section class="section-team">
     <div class="container">
         <div class="heading">
-            <h1>MEET THE TEAM</h1>
+            <h2>MEET THE TEAM</h2>
         </div>
         <div class="grid grid-team">
             <div class="grid-item">
                 <div class="card card-person">
-                    <div class="image-person">
+                    <div class="card-image">
                         <img src="images/person1.png">
-                        <div class="fluid1">
+                        <div class="card-hover">
                             <div class="icons icons-social">
                                 <a href="#" class="icon-social secondary-social">
                                     <span class="fab fa-twitter"></span>
@@ -222,9 +224,9 @@
             </div>
             <div class="grid-item">
                 <div class="card card-person">
-                    <div class="image-person">
+                    <div class="card-image">
                         <img src="images/person2.png">
-                        <div class="fluid1">
+                        <div class="card-hover">
                             <div class="icons icons-social">
                                 <a href="#" class="icon-social secondary-social">
                                     <span class="fab fa-twitter"></span>
@@ -246,9 +248,9 @@
             </div>
             <div class="grid-item">
                 <div class="card card-person">
-                    <div class="image-person">
+                    <div class="card-image">
                         <img src="images/person3.png">
-                        <div class="fluid1">
+                        <div class="card-hover">
                             <div class="icons icons-social">
                                 <a href="#" class="icon-social secondary-social">
                                     <span class="fab fa-twitter"></span>
@@ -270,9 +272,9 @@
             </div>
             <div class="grid-item">
                 <div class="card card-person">
-                    <div class="image-person">
+                    <div class="card-image">
                         <img src="images/person4.png">
-                        <div class="fluid1">
+                        <div class="card-hover">
                             <div class="icons icons-social">
                                 <a href="#" class="icon-social secondary-social">
                                     <span class="fab fa-twitter"></span>
@@ -298,71 +300,95 @@
 <section class="section-work">
     <div class="container">
         <div class="heading">
-            <h1 class="inverse">LOVELY WORK</h1>
+            <h2 class="inverse">LOVELY WORK</h2>
         </div>
         <div class="grid grid-work">
             <div class="grid-item">
-                <div class="card card-travel">
-                    <div class="image-travel">
+                <div class="card card-work">
+                    <div class="card-image">
                         <img src="images/photo1.png">
-                        <div class="fluid2">
-                            <span class="plus">+</span>
-                            <h3 class="partnership inverse">PARTNERSHIP GUIDLINES</h3>
+                        <div class="card-hover">
+                            <a href="#" class="card-plus">
+                                <span class="icon icon-plus">+</span>
+                            </a>
+                            <div class="card-title">
+                                <h3 class="inverse">PARTNERSHIP GUIDLINES</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="card card-travel">
-                    <div class="image-travel">
+                <div class="card card-work">
+                    <div class="card-image">
                         <img src="images/photo2.png">
-                        <div class="fluid2">
-                            <span class="plus">+</span>
-                            <h3 class="partnership inverse">PARTNERSHIP GUIDLINES</h3>
+                        <div class="card-hover">
+                            <a href="#" class="card-plus">
+                                <span class="icon icon-plus">+</span>
+                            </a>
+                            <div class="card-title">
+                                <h3 class="inverse">PARTNERSHIP GUIDLINES</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="card card-travel">
-                    <div class="image-travel">
+                <div class="card card-work">
+                    <div class="card-image">
                         <img src="images/photo3.png">
-                        <div class="fluid2">
-                            <span class="plus">+</span>
-                            <h3 class="partnership inverse">PARTNERSHIP GUIDLINES</h3>
+                        <div class="card-hover">
+                            <a href="#" class="card-plus">
+                                <span class="icon icon-plus">+</span>
+                            </a>
+                            <div class="card-title">
+                                <h3 class="inverse">PARTNERSHIP GUIDLINES</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="card card-travel">
-                    <div class="image-travel">
+                <div class="card card-work">
+                    <div class="card-image">
                         <img src="images/photo4.png">
-                        <div class="fluid2">
-                            <span class="plus">+</span>
-                            <h3 class="partnership inverse">PARTNERSHIP GUIDLINES</h3>
+                        <div class="card-hover">
+                            <a href="#" class="card-plus">
+                                <span class="icon icon-plus">+</span>
+                            </a>
+                            <div class="card-title">
+                                <h3 class="inverse">PARTNERSHIP GUIDLINES</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="card card-travel">
-                    <div class="image-travel">
+                <div class="card card-work">
+                    <div class="card-image">
                         <img src="images/photo5.png">
-                        <div class="fluid2">
-                            <span class="plus">+</span>
-                            <h3 class="partnership inverse">PARTNERSHIP GUIDLINES</h3>
+                        <div class="card-hover">
+                            <a href="#" class="card-plus">
+                                <span class="icon icon-plus">+</span>
+                            </a>
+                            <div class="card-title">
+                                <h3 class="inverse">PARTNERSHIP GUIDLINES</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="grid-item">
-                <div class="card card-travel">
-                    <div class="image-travel">
+                <div class="card card-work">
+                    <div class="card-image">
                         <img src="images/photo6.png">
-                        <div class="fluid2">
-                            <span class="plus">+</span>
-                            <h3 class="partnership inverse">PARTNERSHIP GUIDLINES</h3>
+                        <div class="card-hover">
+                            <a href="#" class="card-plus">
+                                <span class="icon icon-plus">+</span>
+                            </a>
+                            <div class="card-title">
+                                <h3 class="inverse">PARTNERSHIP GUIDLINES</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -376,7 +402,7 @@
 <section class="section-skills">
     <div class="container">
         <div class="heading">
-            <h1>WHAT WE DO</h1>
+            <h2>WHAT WE DO</h2>
         </div>
         <div class="grid grid-skills">
             <div class="grid-item">
@@ -457,7 +483,7 @@
 <section class="section-features">
     <div class="container">
         <div class="heading">
-            <h1 class="inverse">FEATURES</h1>
+            <h2 class="inverse">FEATURES</h2>
         </div>
         <div class="grid grid-features">
             <div class="grid-item">
@@ -504,7 +530,7 @@
 <section class="section-touch">
     <div class="container">
         <div class="heading">
-            <h1>STAY IN TOUCH</h1>
+            <h2>STAY IN TOUCH</h2>
         </div>
     </div>
     <div class="map">
@@ -521,7 +547,7 @@
                     Nunc lobortis dui magna, quis dapibus lacus </p>
             </div>
             <div class="layout-item special">
-                <form class="inform-form" name="name" action="" method="post">
+                <form class="form form-contact" name="name" action="" method="post">
                     <div class="form-data">
                         <p>
                             <label>YOUR NAME</label>
@@ -537,8 +563,8 @@
                         <textarea></textarea>
                     </p>
 
-                    <div class="button-box">
-                        <button class="button-send" type="submit">SEND MESSAGE</button>
+                    <div class="button-group">
+                        <button class="button button-send" type="submit">SEND MESSAGE</button>
                     </div>
                 </form>
             </div>
@@ -573,5 +599,7 @@
         </div>
     </div>
 </footer>
+
+<script src="js/burger_menu.js"></script>
 </body>
 </html>

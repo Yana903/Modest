@@ -17,47 +17,49 @@ Components:
 
 Modules:
 
-- hero
+- hero-1,5h
 	- section-hero
 	- layout-hero
 	- title-hero
 	- description-hero
 	- button
 	
-- achivements
+- achivements-1,5h
 	- section-achievements
 	- heading
 	- description-achivements
 	- link-achivements
 	- social
 	
-- team
+- team-2h
 	- section-team
 	- heading
 	- grid-team
 	- card-team
 	
-- work
+- work-1,5h
 	- section-work
 	- heading
 	- grid-work
 	- button
 	
--skills
+-skills-2h - проблема с иконками
 	- section-skills
 	- heading
 	- grid-skills
 	- card-skills
 	
-- features
+- features-1h
 	- section-features
 	- heading
 	- grid-features
 	- card-features
 	
-- contacts
+- contacts-1h
 	- section-contacts
 	- layout-contact
 	- heading
 	- form-contact
 	
+- footer-40min
+

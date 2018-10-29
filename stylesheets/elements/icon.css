@@ -17,7 +17,6 @@ svg {
 
 svg[class^="icon-"],
 svg[class*=" icon-"] {
-  display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -30,6 +29,10 @@ svg[class*=" icon-"]:hover {
   fill: #34e4cd;
 }
 
+.icons {
+  display: flex;
+}
+
 .icon-skills:hover {
   color: #34e4cd;
 }
@@ -37,19 +40,26 @@ svg[class*=" icon-"]:hover {
 
 .icon-menu {
   fill: #fff !important;
-  display: none !important;
+  display: none;
 }
 
 
 .icon-social {
   margin-right: 1px;
   text-decoration: none;
-  flex-grow: 1;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
-  padding: 15px;
+  align-items: center;
+  padding: 10px;
+  height: 1em;
+  width: 1em;
   background: #c8cdd0;
   color: #fff;
+  font-size: 49px;
+}
+
+.icon-social > .fab {
+  font-size: 0.4em;
 }
 
 .icon-skills {
@@ -62,10 +72,4 @@ svg[class*=" icon-"]:hover {
   height: 50px  !important;
   fill: #23b7a4 !important;
   margin-bottom: 10px;
-}
-
-@media (max-width: 790px) {
-  .icon-menu {
-    display: inline-block !important;
-  }
 }
